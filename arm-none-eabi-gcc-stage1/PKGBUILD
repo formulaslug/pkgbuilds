@@ -3,7 +3,7 @@
 
 _target=arm-none-eabi
 pkgname=$_target-gcc-stage1
-pkgver=7.1.0
+pkgver=7.2.0
 _islver=0.18
 pkgrel=1
 pkgdesc='The GNU Compiler Collection - cross compiler for ARM EABI (bare-metal) target'
@@ -13,10 +13,10 @@ license=(GPL LGPL FDL)
 depends=($_target-binutils zlib-devel mpc-devel)
 makedepends=(gmp-devel mpfr-devel)
 options=(!emptydirs !strip)
-source=(ftp://gcc.gnu.org/pub/gcc/releases/gcc-$pkgver/gcc-$pkgver.tar.bz2
+source=(ftp://gcc.gnu.org/pub/gcc/releases/gcc-$pkgver/gcc-$pkgver.tar.xz
         http://isl.gforge.inria.fr/isl-$_islver.tar.bz2
         enable-with-multilib-list-for-arm.patch)
-sha256sums=('8a8136c235f64c6fef69cac0d73a46a1a09bb250776a050aec8f9fc880bebc17'
+sha256sums=('1cf7adf8ff4b5aa49041c8734bbcf1ad18cc4c94d0029aae0f4e48841088479a'
             '6b8b0fd7f81d0a957beb3679c81bbb34ccc7568d5682844d8924424a0dadcb1b'
             '9447a8fd40d7c1e238b8e9790b739492de5feaa489d61f4ecdab863e5ea1975a')
 
